@@ -12,14 +12,14 @@ const feedbackRoutes = require("./routes/feedbackRoutes");
 //Load environment variables
 dotenv.config();
 
-// Connect to database
+// Connect to database fuction
 connectDB();
 
 const app = express();
 
 //Middleware
 app.use(
-  cors({ origin:'https://mcq-frontend-bice.vercel.app', credentials: true })
+  cors({ origin: "https://mcq-frontend-bice.vercel.app", credentials: true })
 );
 app.use(express.json());
 
