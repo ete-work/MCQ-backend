@@ -18,7 +18,9 @@ connectDB();
 const app = express();
 
 //Middleware
-app.use(cors({ origin: "*", credentials: true }));
+app.use(
+  cors({ origin:'https://mcq-frontend-bice.vercel.app', credentials: true })
+);
 app.use(express.json());
 
 //Setting Routes
